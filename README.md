@@ -1,5 +1,5 @@
 # 📄 Dokumen Rancangan Sistem Multimedia
-## Judul Proyek: Web App Codec & Steganografi (Kompresi, Dekompresi, dan Penyembunyian Pesan Rahasia)
+## Judul Proyek: PixelVault - Web App Codec & Steganografi
 
 ---
 
