@@ -38,7 +38,7 @@
 ## 1. Latar Belakang & Tujuan
 
 ### 1.1 Latar Belakang
-Seiring perkembangan teknologi digital, kebutuhan akan penyimpanan dan transmisi data multimedia (gambar, audio, video) semakin meningkat. Data multimedia memiliki ukuran yang besar sehingga dibutuhkan teknik **kompresi** untuk mengefisiensikan penyimpanan. Di sisi lain, keamanan informasi juga semakin kritis, sehingga dibutuhkan teknik **steganografi** — yaitu ilmu menyembunyikan pesan rahasia di dalam media digital secara tak kasat mata.
+Seiring perkembangan teknologi digital, kebutuhan akan penyimpanan dan transmisi data multimedia (gambar, audio, video) semakin meningkat. Data multimedia memiliki ukuran yang besar sehingga dibutuhkan teknik **kompresi** untuk mengefisiensikan penyimpanan. Di sisi lain, keamanan informasi juga semakin kritis, sehingga dibutuhkan teknik **steganografi** yaitu ilmu menyembunyikan pesan rahasia di dalam media digital secara tak kasat mata.
 
 ### 1.2 Tujuan Proyek
 Membangun sebuah sistem berbasis web yang mampu:
