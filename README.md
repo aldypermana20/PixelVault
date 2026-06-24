@@ -29,7 +29,7 @@
 10. [Format Media yang Didukung](#10-format-media-yang-didukung)
 11. [Rencana Pengujian Lengkap](#11-rencana-pengujian-lengkap)
 12. [Pembagian Tugas & Timeline](#12-pembagian-tugas--timeline)
-13. [Risiko & Mitigasi](#13-risiko--mitigasi)
+13. [Risiko & Mitigasi Pengkodean](#13-risiko--mitigasi)
 
 ---
 
@@ -304,7 +304,7 @@ multimedia-codec-project/
 
 ---
 
-## 10. Format Media yang Didukung (WAJIB DIPATUHI)
+## 10. Format Media yang Didukung
 
 | Kategori Modul | Jenis Media | Format Input | Format Output | Catatan Teknis Penting |
 |---|---|---|---|---|
@@ -339,7 +339,7 @@ multimedia-codec-project/
 
 ---
 
-## 12. Pembagian Tugas & Timeline (3 Minggu Kerja)
+## 12. Pembagian Tugas & Timeline
 
 ### Distribusi Beban Anggota Kelompok
 *   **Aldy (System Designer):** Bertanggung jawab atas ketersediaan aset berkas uji sampel standar (Gambar, Audio `.wav`, Video `.avi`). Mengendalikan tinjauan kode program (*code review*) dan melakukan komparasi kualitas metrik pengujian sebelum presentasi.
