@@ -149,11 +149,16 @@ def decompress_file_huffman(input_path, output_path):
 
 import cv2
 import numpy as np
+import math
 
-def compress_image_huffman(image_path, output_path):
+def compress_image_huffman(image_path, output_path, ratio=100):
     img = cv2.imread(image_path)
     if img is None:
         raise ValueError("Gambar tidak ditemukan atau format tidak valid")
+        
+    if ratio < 100:
+        scale_factor = math.sqrt(ratio / 100.0)
+        img = cv2.resize(img, (0, 0), fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_AREA)
     
     shape = img.shape
     b, g, r = cv2.split(img)

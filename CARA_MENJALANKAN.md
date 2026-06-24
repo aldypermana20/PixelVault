@@ -3,16 +3,16 @@
 Aplikasi "MultiMedia Codec & Steganography Studio" terdiri dari 2 bagian: Backend (Python FastAPI) dan Frontend (React Vite). Keduanya harus berjalan secara bersamaan agar sistem berfungsi penuh.
 
 ## 1. Menjalankan Backend
-Buka terminal/Command Prompt baru, lalu navigasikan ke folder proyek:
+Buka terminal/Command Prompt baru, lalu pastikan Anda berada di dalam folder `PixelVault`:
 ```bash
 cd backend
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 Pastikan muncul tulisan *Application startup complete*. Backend berjalan di `http://localhost:8000`. API Swagger Docs tersedia di `http://localhost:8000/docs`.
 
 ## 2. Menjalankan Frontend
-Buka terminal/Command Prompt lain, lalu navigasikan ke folder proyek:
+Buka terminal/Command Prompt lain, lalu pastikan Anda berada di dalam folder `PixelVault`:
 ```bash
 cd frontend
 npm install

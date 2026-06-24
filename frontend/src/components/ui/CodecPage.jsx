@@ -9,6 +9,7 @@ const CodecPage = ({ title, type }) => {
   const [result, setResult] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
   const [comparisonValue, setComparisonValue] = useState(50);
+  const [compressionRatio, setCompressionRatio] = useState(100);
   const fileInputRef = useRef(null);
 
   const formatBytes = (bytes, decimals = 2) => {
@@ -74,6 +75,9 @@ const CodecPage = ({ title, type }) => {
     setLoading(true);
     const formData = new FormData();
     formData.append('file', file);
+    if (mode === 'compress' && type === 'image') {
+      formData.append('ratio', compressionRatio);
+    }
     
     try {
       await new Promise(r => setTimeout(r, 600)); 
@@ -167,7 +171,16 @@ const CodecPage = ({ title, type }) => {
                   <label className="text-on-surface-variant font-medium">Operation</label>
                   <span className="text-primary font-mono-label">{mode === 'compress' ? 'Encode' : 'Decode'}</span>
                 </div>
-                <input type="range" min="1" max="100" value="100" readOnly className="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" />
+                <input 
+                  type="range" min="10" max="100" 
+                  value={mode === 'compress' && type === 'image' ? compressionRatio : 100} 
+                  onChange={(e) => setCompressionRatio(parseInt(e.target.value))}
+                  disabled={!(mode === 'compress' && type === 'image')}
+                  className={`w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none accent-primary ${!(mode === 'compress' && type === 'image') ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`} 
+                />
+                {mode === 'compress' && type === 'image' && (
+                  <div className="text-xs text-right text-on-surface-variant font-mono-label mt-1">Scale Ratio: {compressionRatio}%</div>
+                )}
               </div>
 
               <div className="space-y-2">

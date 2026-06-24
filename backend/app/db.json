@@ -1,6 +1,6 @@
 {
-    "total_files_processed": 22,
-    "total_compression_saved_bytes": 1334893,
+    "total_files_processed": 28,
+    "total_compression_saved_bytes": 12606670,
     "processed_history": [
         {
             "file_type": "image",
@@ -133,6 +133,42 @@
             "process_type": "extract",
             "original_size": 0,
             "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "embed",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "extract",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 74567
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 7168372
+        },
+        {
+            "file_type": "image",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 3604098
         }
     ]
 }

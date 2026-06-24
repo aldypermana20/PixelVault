@@ -1,6 +1,6 @@
 import os
 import uuid
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, UploadFile, File, Form
 from fastapi.responses import FileResponse
 from app.utils.file_utils import save_upload_file, get_temp_path
 from app.services.codec.huffman import compress_image_huffman, decompress_image_huffman
@@ -9,7 +9,7 @@ from app.db import update_stats
 router = APIRouter()
 
 @router.post("/compress")
-async def compress_image(file: UploadFile = File(...)):
+async def compress_image(file: UploadFile = File(...), ratio: int = Form(100)):
     # Simpan file yang diupload sementara
     input_path = save_upload_file(file)
     
@@ -17,8 +17,8 @@ async def compress_image(file: UploadFile = File(...)):
     output_filename = f"compressed_{uuid.uuid4()}.huff"
     output_path = get_temp_path(output_filename)
     
-    # Proses kompresi menggunakan Huffman
-    compress_image_huffman(input_path, output_path)
+    # Proses kompresi menggunakan Huffman dengan ratio scaling
+    compress_image_huffman(input_path, output_path, ratio)
     
     # Hitung metrik ukuran
     original_size = os.path.getsize(input_path)
