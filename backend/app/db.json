@@ -1,0 +1,138 @@
+{
+    "total_files_processed": 22,
+    "total_compression_saved_bytes": 1334893,
+    "processed_history": [
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 114003708
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 13735666
+        },
+        {
+            "file_type": "image",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 7168372
+        },
+        {
+            "file_type": "image",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "audio",
+            "process_type": "compress",
+            "original_size": 5292110,
+            "processed_size": 4857796
+        },
+        {
+            "file_type": "audio",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "video",
+            "process_type": "compress",
+            "original_size": 9909100,
+            "processed_size": 9813473
+        },
+        {
+            "file_type": "video",
+            "process_type": "compress",
+            "original_size": 9909100,
+            "processed_size": 9813473
+        },
+        {
+            "file_type": "video",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "embed",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "extract",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 7168372
+        },
+        {
+            "file_type": "image",
+            "process_type": "decompress",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 2157988,
+            "processed_size": 4154672
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 2157988,
+            "processed_size": 4154672
+        },
+        {
+            "file_type": "image",
+            "process_type": "compress",
+            "original_size": 7372938,
+            "processed_size": 7168372
+        },
+        {
+            "file_type": "video",
+            "process_type": "compress",
+            "original_size": 9909100,
+            "processed_size": 9813473
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "embed",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "extract",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "embed",
+            "original_size": 0,
+            "processed_size": 0
+        },
+        {
+            "file_type": "stego_image",
+            "process_type": "extract",
+            "original_size": 0,
+            "processed_size": 0
+        }
+    ]
+}

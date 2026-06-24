@@ -1,28 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
-import CompressPage from './pages/CompressPage';
-import StegoPage from './pages/StegoPage';
-import AboutPage from './pages/AboutPage';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import CodecPage from './components/ui/CodecPage';
+import StegoPage from './components/ui/StegoPage';
 
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen bg-dark-bg text-slate-100 flex flex-col">
-        {/* Floating Navigation Header */}
-        <Navbar />
-        
-        {/* Content Routes */}
-        <main className="flex-1 w-full">
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/compress" element={<CompressPage />} />
-            <Route path="/steganography" element={<StegoPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
-        </main>
-      </div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Navigate to="/codec/image" replace />} />
+          <Route path="/codec/image" element={<CodecPage title="Image Codec" type="image" />} />
+          <Route path="/codec/audio" element={<CodecPage title="Audio Codec" type="audio" />} />
+          <Route path="/codec/video" element={<CodecPage title="Video Codec" type="video" />} />
+          <Route path="/stego/image" element={<StegoPage title="Image Steganography" type="image" />} />
+          <Route path="/stego/audio" element={<StegoPage title="Audio Steganography" type="audio" />} />
+          <Route path="/stego/video" element={<StegoPage title="Video Steganography" type="video" />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
