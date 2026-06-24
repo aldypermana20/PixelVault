@@ -4,16 +4,14 @@
 ---
 
 **Mata Kuliah:** Sistem Multimedia  
-**Kelompok:** [Nama Kelompok]  
+**Kelompok:** [11]  
 **Anggota Tim:**
 | Nama | NIM | Peran |
 |---|---|---|
-| Aldy | [NIM] | Perancang Sistem (*System Designer*) |
-| Dapoy | [NIM] | Pengembang Web (*Web Developer*) |
-| Dwi | [NIM] | Penyusun Laporan (*Documentation*) |
+| Aldy | [1237050003] | Perancang Sistem (*System Designer*) |
+| Dapoy | [1237050069] | Pengembang Web (*Web Developer*) |
+| Dwi | [1237050104] | Penyusun Laporan (*Documentation*) |
 
-**Versi Dokumen:** 1.2 (Final Revision)  
-**Tanggal Dibuat:** 23 Juni 2026
 
 ---
 
